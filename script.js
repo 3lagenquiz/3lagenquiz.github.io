@@ -1,20 +1,38 @@
 const questions = [
   {
-     question: "Vraag 1 text",
+     question: "Which is the largest animal in the world?",
      answers: [
-        { text: "goed antwoord", correct: true},
-        { text: "optie antwoord", correct: false},
-        { text: "optie antwoord", correct: false},
-        { text: "optie antwoord", correct: false},
+        { text: "Shark", correct: false},
+        { text: "Blue Whale", correct: true},
+        { text: "Elephant", correct: false},
+        { text: "Giraffe", correct: false},
        ]
   },
   {
-   question: "Vraag 2 text",
+   question: "Wich is the smallest country in the world?",
      answers: [
-        { text: "goed antwoord", correct: true},
-        { text: "optie antwoord", correct: false},
-        { text: "optie antwoord", correct: false},
-        { text: "optie antwoord", correct: false},
+        { text: "Vatican City", correct: true},
+        { text: "Bhutan", correct: false},
+        { text: "Nepal", correct: false},
+        { text: "Shri Lanka", correct: false},
+       ]
+  },
+  {
+     question: "Wich is the largest desert in the wordl?",
+     answers: [
+        { text: "Kalahari", correct: false},
+        { text: "Gobi", correct: false},
+        { text: "Sahara", correct: false},
+        { text: "Antartica", correct: true},
+       ]
+  },
+  {
+     question: "Which is the smallest continent in the world?",
+     answers: [
+        { text: "Asia", correct: false},
+        { text: "Australia", correct: true},
+        { text: "Artctic", correct: false},
+        { text: "Africa", correct: false},
        ]
   }
 ];
