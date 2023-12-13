@@ -1,5 +1,42 @@
 const questions = [
-  // ... (je array met vragen blijft hetzelfde)
+  {
+     question: "Which is the largest animal in the world?",
+     answers: [
+        { text: "Shark", correct: false},
+        { text: "Blue Whale", correct: true},
+        { text: "Elephant", correct: false},
+        { text: "Giraffe", correct: false},
+       ]
+  },
+  {
+   question: "Wich is the smallest country in the world?",
+     answers: [
+        { text: "Vatican City", correct: true},
+        { text: "Bhutan", correct: false},
+        { text: "Nepal", correct: false},
+        { text: "Shri Lanka", correct: false},
+       ]
+  },
+  {
+     question: "Wich is the largest desert in the wordl?",
+     answers: [
+        { text: "Kalahari", correct: false},
+        { text: "Gobi", correct: false},
+        { text: "Sahara", correct: false},
+        { text: "Antartica", correct: true},
+       ]
+  },
+  {
+     question: "Which is the smallest continent in the world?",
+     answers: [
+        { text: "Asia", correct: false},
+        { text: "Australia", correct: true},
+        { text: "Artctic", correct: false},
+        { text: "Africa", correct: false},
+       ]
+  }
+];
+
 ];
 
 const questionElement = document.getElementById("question");
@@ -10,7 +47,7 @@ let currentQuestionIndex = 0;
 let score = 0;
 
 function startQuiz() {
-  currentQuestionIndex = 0; // Initialiseer de variabele currentQuestionIndex
+  currentQuestionIndex = 0;
   score = 0;
   nextButton.innerHTML = "Next";
   showQuestion();
@@ -24,7 +61,7 @@ function showQuestion() {
 
   currentQuestion.answers.forEach((answer) => {
     const button = document.createElement("button");
-    button.innerHTML = answer.text; // Correcte spelling van innerHTML
+    button.innerHTML = answer.text;
     button.classList.add("btn");
     answerButtons.appendChild(button);
     if (answer.correct) {
@@ -52,7 +89,7 @@ function selectAnswer(e) {
   }
   Array.from(answerButtons.children).forEach((button) => {
     if (button.dataset.correct === "true") {
-      button.classList.add("correct"); // Correcte spelling van classList
+      button.classList.add("correct");
     }
     button.disabled = true;
   });
@@ -61,7 +98,7 @@ function selectAnswer(e) {
 
 function showScore() {
   resetState();
-  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`; // Correcte spelling van length
+  questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
   nextButton.innerHTML = "Play Again";
   nextButton.style.display = "block";
 }
