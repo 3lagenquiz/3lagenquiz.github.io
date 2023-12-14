@@ -1,38 +1,38 @@
 const questions = [
   {
-     question: "What is the capital of France??",
+     question: "What is the 3-layer model in the context of software development?",
      answers: [
-        { text: "London", correct: false},
-        { text: "Berlin", correct: false},
-        { text: "Paris", correct: true},
-        { text: "Madrid", correct: false},
+        { text: "A model for building a cake", correct: false},
+        { text: "An architectural model with presentation layer, logical layer and data layer", correct: true},
+        { text: "A model for designing clothing", correct: false},
+        { text: "A model for making a sandwich", correct: false},
        ]
   },
   {
-   question: "Which planet is closest to the sun?",
+   question: "What does the presentation layer represent in the 3-layer model?",
      answers: [
-        { text: "Mars", correct: false},
-        { text: "Venus", correct: false},
-        { text: "Jupiter", correct: false},
-        { text: "Mercury", correct: true},
+        { text: "The user interface", correct: true},
+        { text: "The database", correct: false},
+        { text: "The server logic", correct: false},
+        { text: "The communication layer", correct: false},
        ]
   },
   {
-     question: "How many continents are there on Earth?",
+     question: "Which layer in the 3-tier model is responsible for data storage and recovery?",
      answers: [
-        { text: "5", correct: false},
-        { text: "6", correct: false},
-        { text: "7", correct: true},
-        { text: "8", correct: false},
+        { text: "Presentation layer", correct: false},
+        { text: "Logic layer", correct: false},
+        { text: "Data layer", correct: true},
+        { text: "Application layer", correct: false},
        ]
   },
   {
-     question: "What is the chemical formula for water?",
+     question: "What is the purpose of the 3-layer model in software development??",
      answers: [
-        { text: "CO2", correct: false},
-        { text: "H2O", correct: true},
-        { text: "O2", correct: false},
-        { text: "NaCl", correct: false},
+        { text: "Baking cakes", correct: false},
+        { text: "Separating concerns for better modularity and maintenance", correct: true},
+        { text: "Designing fashion accessories", correct: false},
+        { text: "Building spacecraft", correct: false},
        ]
   }
 ];
