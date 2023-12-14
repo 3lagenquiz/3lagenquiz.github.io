@@ -1,5 +1,82 @@
 const questions = [
   {
+     question: "Welke laag is verantwoordelijk voor het verzenden en ontvangen van gegevens tussen eindapparaten over het netwerk?",
+     answers: [
+        { text: "Applicatielaag", correct: false},
+        { text: "Transportlaag", correct: false},
+        { text: "Netwerklaag", correct: true},
+        { text: "Fysieke laag", correct: false},
+       ]
+  },
+  {
+   question: "Bij welke laag worden gegevens geordend en verpakt voor efficiënte overdracht?",
+     answers: [
+        { text: "Applicatielaag", correct: false},
+        { text: "Datalinklaag", correct: false},
+        { text: "Netwerklaag", correct: false},
+        { text: "Transportlaag", correct: true},
+       ]
+  },
+  {
+     question: "Welke laag bepaalt de beste route voor het verzenden van gegevens van de ene naar de andere locatie?",
+     answers: [
+        { text: "Transportlaag", correct: false},
+        { text: "Netwerklaag", correct: false},
+        { text: "Fysieke laag", correct: true},
+        { text: "Applicatielaag", correct: false},
+       ]
+  },
+  {
+     question: "Waar bevindt zich de IP-adressering en routering in het 3-lagenmodel?",
+     answers: [
+        { text: "Applicatielaag", correct: false},
+        { text: "Datalinklaag", correct: true},
+        { text: "Netwerklaag", correct: false},
+        { text: "Transportlaag", correct: false},
+       ]
+  }
+
+ {
+     question: "Bij welke laag wordt het TCP-protocol gebruikt voor betrouwbare gegevensoverdracht??",
+     answers: [
+        { text: "Transportlaag", correct: false},
+        { text: "Netwerklaag", correct: true},
+        { text: "Fysieke laag", correct: false},
+        { text: "Datalinklaag", correct: false},
+       ]
+  },
+
+   {
+     question: "Welke laag van het 3-lagenmodel biedt diensten zoals HTTP, FTP en SMTP?",
+     answers: [
+        { text: "Applicatielaag", correct: false},
+        { text: "Transportlaag", correct: true},
+        { text: "Netwerklaag", correct: false},
+        { text: "Datalinklaag", correct: false},
+       ]
+  },
+
+      {
+     question: "Welke laag in het 3-lagenmodel behandelt de fysieke verbinding en signalering van gegevens?",
+     answers: [
+        { text: "Transportlaag", correct: false},
+        { text: "Netwerklaag", correct: true},
+        { text: "Fysieke laag", correct: false},
+        { text: "Datalinklaag", correct: false},
+       ]
+  },
+
+         {
+     question: "Bij welke laag worden frames en MAC-adressen gebruikt om gegevens over een lokale netwerkverbinding te verzenden?",
+     answers: [
+        { text: "Applicatielaag", correct: false},
+        { text: "Transportlaag", correct: true},
+        { text: "Datalinklaag", correct: false},
+        { text: "Netwerklaag", correct: false},
+       ]
+  },
+
+            {
      question: "What is the 3-layer model in the context of software development?",
      answers: [
         { text: "A model for building a cake", correct: false},
@@ -8,33 +85,27 @@ const questions = [
         { text: "A model for making a sandwich", correct: false},
        ]
   },
-  {
-   question: "What does the presentation layer represent in the 3-layer model?",
+
+               {
+     question: "Welke laag van het 3-lagenmodel gebruikt protocollen zoals Ethernet, WLAN en Bluetooth?",
      answers: [
-        { text: "The user interface", correct: true},
-        { text: "The database", correct: false},
-        { text: "The server logic", correct: false},
-        { text: "The communication layer", correct: false},
+        { text: "Transportlaag", correct: false},
+        { text: "Datalinklaag", correct: true},
+        { text: "Netwerklaag", correct: false},
+        { text: "Applicatielaag", correct: false},
        ]
   },
-  {
-     question: "Which layer in the 3-tier model is responsible for data storage and recovery?",
+
+                  {
+     question: "Waar is het gebruik van poorten en sessie-informatie typisch voor in het 3-lagenmodel?",
      answers: [
-        { text: "Presentation layer", correct: false},
-        { text: "Logic layer", correct: false},
-        { text: "Data layer", correct: true},
-        { text: "Application layer", correct: false},
-       ]
-  },
-  {
-     question: "What is the purpose of the 3-layer model in software development??",
-     answers: [
-        { text: "Baking cakes", correct: false},
-        { text: "Separating concerns for better modularity and maintenance", correct: true},
-        { text: "Designing fashion accessories", correct: false},
-        { text: "Building spacecraft", correct: false},
+        { text: "Applicatielaag", correct: false},
+        { text: "Datalinklaag", correct: true},
+        { text: "Transportlaag", correct: false},
+        { text: "Netwerklaag", correct: false},
        ]
   }
+  
 ];
 
 const questionElement = document.getElementById("question");
