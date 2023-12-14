@@ -21,8 +21,8 @@ const questions = [
      question: "Welke laag bepaalt de beste route voor het verzenden van gegevens van de ene naar de andere locatie?",
      answers: [
         { text: "Transportlaag", correct: false},
-        { text: "Netwerklaag", correct: false},
-        { text: "Fysieke laag", correct: true},
+        { text: "Netwerklaag", correct: true},
+        { text: "Fysieke laag", correct: false},
         { text: "Applicatielaag", correct: false},
        ]
   },
@@ -30,17 +30,17 @@ const questions = [
      question: "Waar bevindt zich de IP-adressering en routering in het 3-lagenmodel?",
      answers: [
         { text: "Applicatielaag", correct: false},
-        { text: "Datalinklaag", correct: true},
-        { text: "Netwerklaag", correct: false},
+        { text: "Datalinklaag", correct: false},
+        { text: "Netwerklaag", correct: true},
         { text: "Transportlaag", correct: false},
        ]
-  }
+  },
 
  {
      question: "Bij welke laag wordt het TCP-protocol gebruikt voor betrouwbare gegevensoverdracht??",
      answers: [
-        { text: "Transportlaag", correct: false},
-        { text: "Netwerklaag", correct: true},
+        { text: "Transportlaag", correct: true},
+        { text: "Netwerklaag", correct: false},
         { text: "Fysieke laag", correct: false},
         { text: "Datalinklaag", correct: false},
        ]
@@ -49,8 +49,8 @@ const questions = [
    {
      question: "Welke laag van het 3-lagenmodel biedt diensten zoals HTTP, FTP en SMTP?",
      answers: [
-        { text: "Applicatielaag", correct: false},
-        { text: "Transportlaag", correct: true},
+        { text: "Applicatielaag", correct: true},
+        { text: "Transportlaag", correct: false},
         { text: "Netwerklaag", correct: false},
         { text: "Datalinklaag", correct: false},
        ]
@@ -60,8 +60,8 @@ const questions = [
      question: "Welke laag in het 3-lagenmodel behandelt de fysieke verbinding en signalering van gegevens?",
      answers: [
         { text: "Transportlaag", correct: false},
-        { text: "Netwerklaag", correct: true},
-        { text: "Fysieke laag", correct: false},
+        { text: "Netwerklaag", correct: false},
+        { text: "Fysieke laag", correct: true},
         { text: "Datalinklaag", correct: false},
        ]
   },
@@ -70,22 +70,11 @@ const questions = [
      question: "Bij welke laag worden frames en MAC-adressen gebruikt om gegevens over een lokale netwerkverbinding te verzenden?",
      answers: [
         { text: "Applicatielaag", correct: false},
-        { text: "Transportlaag", correct: true},
-        { text: "Datalinklaag", correct: false},
+        { text: "Transportlaag", correct: false},
+        { text: "Datalinklaag", correct: true},
         { text: "Netwerklaag", correct: false},
        ]
   },
-
-            {
-     question: "What is the 3-layer model in the context of software development?",
-     answers: [
-        { text: "A model for building a cake", correct: false},
-        { text: "An architectural model with presentation layer, logical layer and data layer", correct: true},
-        { text: "A model for designing clothing", correct: false},
-        { text: "A model for making a sandwich", correct: false},
-       ]
-  },
-
                {
      question: "Welke laag van het 3-lagenmodel gebruikt protocollen zoals Ethernet, WLAN en Bluetooth?",
      answers: [
@@ -99,8 +88,8 @@ const questions = [
                   {
      question: "Waar is het gebruik van poorten en sessie-informatie typisch voor in het 3-lagenmodel?",
      answers: [
-        { text: "Applicatielaag", correct: false},
-        { text: "Datalinklaag", correct: true},
+        { text: "Applicatielaag", correct: true},
+        { text: "Datalinklaag", correct: false},
         { text: "Transportlaag", correct: false},
         { text: "Netwerklaag", correct: false},
        ]
