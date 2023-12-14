@@ -1,38 +1,38 @@
 const questions = [
   {
-     question: "Which is the largest animal in the world?",
+     question: "What is the capital of France??",
      answers: [
-        { text: "Shark", correct: false},
-        { text: "Blue Whale", correct: true},
-        { text: "Elephant", correct: false},
-        { text: "Giraffe", correct: false},
+        { text: "London", correct: false},
+        { text: "Berlin", correct: false},
+        { text: "Paris", correct: true},
+        { text: "Madrid", correct: false},
        ]
   },
   {
-   question: "Wich is the smallest country in the world?",
+   question: "Which planet is closest to the sun?",
      answers: [
-        { text: "Vatican City", correct: true},
-        { text: "Bhutan", correct: false},
-        { text: "Nepal", correct: false},
-        { text: "Shri Lanka", correct: false},
+        { text: "Mars", correct: false},
+        { text: "Venus", correct: false},
+        { text: "Jupiter", correct: false},
+        { text: "Mercury", correct: true},
        ]
   },
   {
-     question: "Wich is the largest desert in the wordl?",
+     question: "How many continents are there on Earth?",
      answers: [
-        { text: "Kalahari", correct: false},
-        { text: "Gobi", correct: false},
-        { text: "Sahara", correct: false},
-        { text: "Antartica", correct: true},
+        { text: "5", correct: false},
+        { text: "6", correct: false},
+        { text: "7", correct: true},
+        { text: "8", correct: false},
        ]
   },
   {
-     question: "Which is the smallest continent in the world?",
+     question: "What is the chemical formula for water?",
      answers: [
-        { text: "Asia", correct: false},
-        { text: "Australia", correct: true},
-        { text: "Artctic", correct: false},
-        { text: "Africa", correct: false},
+        { text: "CO2", correct: false},
+        { text: "H2O", correct: true},
+        { text: "O2", correct: false},
+        { text: "NaCl", correct: false},
        ]
   }
 ];
